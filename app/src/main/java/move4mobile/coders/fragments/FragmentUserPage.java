@@ -19,6 +19,8 @@ import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 import butterknife.BindView;
@@ -102,6 +104,19 @@ public class FragmentUserPage  extends Fragment{
                 GithubUsert usert = dataSnapshot.getValue(GithubUsert.class);
                 if(!mListUsers.contains(usert)){
                     mListUsers.add(usert);
+                    Collections.sort(mListUsers, new Comparator<GithubUsert>() {
+                        @Override
+                        public int compare(GithubUsert githubUsert, GithubUsert t1) {
+                            if(githubUsert.getScore() > t1.getScore()){
+                                return -1;
+                            }else if(githubUsert.getScore() == t1.getScore()){
+                                return 0;
+                            }else{
+                                return 1;
+                            }
+                        }
+                    });
+
                     if(mRecyclerStats != null){
                         mAdapter.notifyDataSetChanged();
                     }

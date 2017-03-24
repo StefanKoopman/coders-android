@@ -11,6 +11,7 @@ public class GithubUsert {
     private String name;
     private double orderKey;
     private int score;
+    private String repo;
 
     public GithubUsert() {
     }
@@ -61,5 +62,13 @@ public class GithubUsert {
 
     public void setScore(int score) {
         this.score = score;
+    }
+
+    public String getRepo() {
+        return repo;
+    }
+
+    public void setRepo(String repo) {
+        this.repo = repo;
     }
 }
