@@ -17,20 +17,13 @@
         android:id="@+id/nav_view"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
+        android:background="#2688D1"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
         app:itemTextColor="#fff"
         app:headerLayout="@layout/nav_header_overview"
         app:menu="@menu/activity_overview_drawer">
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scaleType="centerCrop"
-            android:adjustViewBounds="true"
-            android:src="@drawable/background"
-            android:elevation="-1dp"
-            />
 
         </android.support.design.widget.NavigationView>
 
