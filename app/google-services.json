@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "567701438863",
+    "firebase_url": "https://m4m-code-heroes.firebaseio.com",
+    "project_id": "m4m-code-heroes",
+    "storage_bucket": "m4m-code-heroes.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:567701438863:android:00ffc36603058607",
+        "android_client_info": {
+          "package_name": "move4mobile.codeheroes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "567701438863-4to1sdp839lcum44n2e325n5cj8d2ao0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeIoaCpd4vl02vOebiS58U8ZvDWpDtQX8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

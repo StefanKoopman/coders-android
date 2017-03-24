@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        />
+
+
+
+
+
+    <move4mobile.coders.ApexTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="32dp"
+        android:text="@string/app_name"
+        android:id="@+id/text_title"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textSize="26sp"
+        />
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_title"
+        android:id="@+id/webview"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/background_white"
+        android:layout_centerInParent="true"
+        android:drawableLeft="@drawable/github"
+        android:paddingLeft="32dp"
+        android:text="Login with GitHub"
+        android:visibility="gone"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        />
+
+
+</RelativeLayout>
